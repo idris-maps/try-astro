@@ -1,0 +1,22 @@
+---
+const { content } = Astro.props
+---
+
+<html>
+  <head>
+    <title>{content.title}</title>
+  </head>
+  <body>
+    <main>
+      <slot/>
+    </main>
+  </body>
+</html>
+
+<style>
+  main {
+    max-width: 800px;
+    margin: auto;
+    color: indianred;
+  }
+</style>
