@@ -1,0 +1,67 @@
+---
+import PokemonList from '../components/PokemonList.astro'
+
+const { collection } = Astro.props
+
+export async function createCollection() {
+  const allPokemonResponse = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=5`)
+  const allPokemon = (await allPokemonResponse.json()).results
+  return {
+    routes: allPokemon,
+    permalink: ({ params }) => `/pokemon/${params.name}`,
+    async data({ params }) {
+      const onePokemonResponse = await fetch(params.url)
+      return [await onePokemonResponse.json(), allPokemon]
+    },
+    pageSize: 5,
+  }
+}
+---
+<html lang="en">
+  <head>
+    <title>Pokemon: {collection.params.name}</head>
+  <body>
+    <h1>Pokemon</h1>
+    <main>
+      <PokemonList pokemons={collection.data[1]} />
+      <section>
+        <h2>{collection.data[0].name}</h2>
+        <img
+          src={collection.data[0].sprites.front_default} alt={collection.data[0].name}
+          style="width:300px"
+        />
+        <table>
+          <tr>
+            <th>Base experience</th>
+            <td>{collection.data[0].base_experience}</td>
+          </tr>
+          <tr>
+            <th>Height</th>
+            <td>{collection.data[0].height}</td>
+          </tr>
+          <tr>
+            <th>Weight</th>
+            <td>{collection.data[0].weight}</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+main {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+section {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+</style>

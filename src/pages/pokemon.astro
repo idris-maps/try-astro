@@ -1,0 +1,10 @@
+---
+import PokemonList from '../components/PokemonList.astro'
+
+const list = await fetch('https://pokeapi.co/api/v2/pokemon?limit=5')
+  .then(r => r.json())
+  .then(r => r.results)
+---
+
+<h1>Pokemon</h1>
+<PokemonList pokemons={list} />

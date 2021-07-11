@@ -1,0 +1,17 @@
+---
+export interface Props {
+  pokemons: { name: string }[]
+}
+
+const { pokemons } = Astro.props
+---
+
+<nav>
+  <ul>
+    {pokemons.map(({ name }) => (
+      <li>
+        <a href={`/pokemon/${name}`}>{name}</a>
+      </li>
+    ))}
+  </ul>
+</nav>
