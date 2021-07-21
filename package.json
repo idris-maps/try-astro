@@ -5,7 +5,7 @@
     "start": "astro dev",
     "build": "astro build"
   },
-  "devDependencies": {
-    "astro": "latest"
+  "dependencies": {
+    "astro": "^0.17.3"
   }
 }
