@@ -1,30 +1,18 @@
-# Welcome to [Astro](https://astro.build)
+# Try astro
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Links
 
-## 🚀 Project Structure
+* [site](https://astro.build/)
+* [docs](https://docs.astro.build)
+* [repo](https://github.com/snowpackjs/astro)
+* [announcement](https://astro.build/blog/introducing-astro)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Videos
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Learn with Jason
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+[![Learn with Jason](https://img.youtube.com/vi/lMFfTRiipOQ/0.jpg)](https://www.youtube.com/watch?v=lMFfTRiipOQ)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Speakeasy.js
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://discord.gg/EsGdSGen).
+[![Speakeasy.js](https://img.youtube.com/vi/mgkwZqVkrwo/0.jpg)](https://www.youtube.com/watch?v=mgkwZqVkrwo)
