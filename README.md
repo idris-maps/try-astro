@@ -16,3 +16,12 @@ Learn with Jason
 Speakeasy.js
 
 [![Speakeasy.js](https://img.youtube.com/vi/mgkwZqVkrwo/0.jpg)](https://www.youtube.com/watch?v=mgkwZqVkrwo)
+
+## Hack the example
+
+```
+npx degit idris-maps/try-astro try-astro
+cd try-astro
+npm install
+npm run start
+```
