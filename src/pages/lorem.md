@@ -3,8 +3,6 @@ title: The title
 layout: ../layouts/md.astro
 ---
 
-# The title
-
 ## Lorem ipsum dolor sit amet
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra massa massa ultricies mi quis hendrerit dolor. Integer feugiat scelerisque varius morbi enim nunc. Ipsum nunc aliquet bibendum enim facilisis gravida. Convallis posuere morbi leo urna molestie at elementum eu. Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Orci nulla pellentesque dignissim enim sit amet. Tempor orci eu lobortis elementum. Congue quisque egestas diam in arcu. Commodo odio aenean sed adipiscing diam donec. Mi sit amet mauris commodo quis imperdiet. Massa tincidunt nunc pulvinar sapien et ligula. Eget nullam non nisi est sit. Ut tristique et egestas quis ipsum suspendisse ultrices. Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Lorem sed risus ultricies tristique nulla aliquet.

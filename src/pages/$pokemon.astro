@@ -1,4 +1,6 @@
 ---
+import Layout from '../layouts/main.astro'
+
 import PokemonList from '../components/PokemonList.astro'
 
 const { collection } = Astro.props
@@ -17,42 +19,36 @@ export async function createCollection() {
   }
 }
 ---
-<html lang="en">
-  <head>
-    <title>Pokemon: {collection.params.name}</head>
-  <body>
-    <h1>Pokemon</h1>
-    <main>
-      <PokemonList pokemons={collection.data[1]} />
-      <section>
-        <h2>{collection.data[0].name}</h2>
-        <img
-          src={collection.data[0].sprites.front_default} alt={collection.data[0].name}
-          style="width:300px"
-        />
-        <table>
-          <tr>
-            <th>Base experience</th>
-            <td>{collection.data[0].base_experience}</td>
-          </tr>
-          <tr>
-            <th>Height</th>
-            <td>{collection.data[0].height}</td>
-          </tr>
-          <tr>
-            <th>Weight</th>
-            <td>{collection.data[0].weight}</td>
-          </tr>
-        </table>
-      </section>
-    </main>
-  </body>
-</html>
+
+<Layout title={collection.data[0].name}>
+  <div id="content">
+    <PokemonList pokemons={collection.data[1]} />
+    <section>
+      <h2>{collection.data[0].name}</h2>
+      <img
+        src={collection.data[0].sprites.front_default} alt={collection.data[0].name}
+        style="width:300px"
+      />
+      <table>
+        <tr>
+          <th>Base experience</th>
+          <td>{collection.data[0].base_experience}</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>{collection.data[0].height}</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>{collection.data[0].weight}</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</Layout>
 
 <style>
-main {
-  max-width: 1000px;
-  margin: auto;
+#content {
   display: grid;
   grid-template-columns: auto auto;
 }

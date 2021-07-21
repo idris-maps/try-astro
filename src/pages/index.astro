@@ -1,29 +1,19 @@
 ---
+import Layout from '../layouts/main.astro'
 import Lorem from '../components/Lorem.astro'
 import SvelteCounter from '../components/SvelteCounter.svelte'
 import VueCounter from '../components/VueCounter.vue'
 ---
 
-<!doctype html>
-<html>
-  <head>
-    <title>Astro</title>
-  </head>
-  <body>
-    <main>
-      <header>
-        <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-      </header>
-      <SvelteCounter />
-      <VueCounter />
-      <hr />
-      <SvelteCounter client:idle />
-      <Lorem />
-      <Lorem />
-      <VueCounter client:visible />
-    </main>
-  </body>
-</html>
+<Layout title="Home">
+  <SvelteCounter />
+  <VueCounter />
+  <hr />
+  <SvelteCounter client:idle />
+  <Lorem />
+  <Lorem />
+  <VueCounter client:visible />
+</Layout>
 
 <style>
 main {
