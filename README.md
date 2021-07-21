@@ -11,7 +11,7 @@
 
 Learn with Jason
 
-[![Learn with Jason](https://img.youtube.com/vi/lMFfTRiipOQ/0.jpg)](https://www.youtube.com/watch?v=lMFfTRiipOQ)
+[![Learn with Jason](https://img.youtube.com/vi/z15YLsLMtu4&/0.jpg)](https://www.youtube.com/watch?v=z15YLsLMtu4)
 
 Speakeasy.js
 
